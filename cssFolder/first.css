@@ -1,0 +1,196 @@
+/* we can call a tag by its name 
+    the down side for that it will effect all the tags */
+h1{
+    color: red;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: greenyellow;
+}
+/* a:visited{
+    color: blueviolet;
+} */
+
+body{
+    background-color: rgb(128, 204, 252);
+    text-align: center;
+}
+.first{
+    border: solid orange;
+    margin: 20px 0 ;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: blanchedalmond;
+    /* change the space bettween lines */
+    line-height: 2cm;
+}
+.clr{
+    clear: both;
+
+}
+/* but we can also call an element by its class or ID and then you 
+    can decide if you want to call a group of elements or just one */
+
+.second{
+    background-color: aquamarine;
+    margin:0% 5%;
+    /* margin-right: 5%; */
+    border: solid red;
+    text-align: right;
+    
+}
+/* padding it the space bettween an itme and its insaide
+    and margin it the space outside the itme */
+.header2{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+    margin: 0 5%;
+
+}
+.try{
+    color: palevioletred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-weight: 20;
+    font-size: 2em;
+    border: dashed black;
+    margin: 1% 5%;
+    padding-right: 2%;
+
+}
+.categories{
+    border: solid 1px gray;
+    margin: 20px 35% 0 ;
+}
+.categories h1{
+    text-align: center;
+}
+.categories ul{
+    padding: 2%;
+    text-align: left;
+    list-style: none;
+
+}
+.categories li{
+    padding-bottom: 8px;
+    border-bottom: dotted 6px palegreen;
+}
+
+.my-form{
+    padding: 20px;
+    text-align: left;
+}
+.form-group{
+    padding-bottom: 15px;
+}
+.my-form label{
+    display: block;
+}
+.my-form input[type="text"]{
+    padding: 8px;
+    width: 50%;
+}
+
+.form-group{
+    border: none;
+    margin: 0 0;
+    margin-left: 2px ;
+
+}
+.my-form input[type="submit"]{
+    background-color: brown;
+    color: aqua;
+    width: 9%;
+    height: 30px;
+}
+.my-form input[type="submit"]:hover{
+    color: aquamarine;
+    background-color: black;
+}
+
+.block{
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+#main-block{
+    border: 1px solid;
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+#sidebar{
+    border: 1px solid;
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+/* positions */
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 30px;
+    position: relative;
+    background-image: url(/pokeball.jpg);
+    background-position: 100px 100px;
+    background-repeat: no-repeat;
+    background-position:center ;
+
+}
+.p-box h1{
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+.p-box h2{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+.fix-me{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid;
+    width: 40px;
+    height: 20px;
+    background-color: blueviolet;
+}
+.my-list{
+    list-style: none;
+}
+.my-list li:first-child{
+    background-color: red;
+
+}
+.my-list li:last-child{
+    background-color: burlywood;
+}
+.my-list li:nth-child(5){
+    background-color: yellow;
+}
+
+.my-list li:nth-child(even){
+    background-color: green;
+}
